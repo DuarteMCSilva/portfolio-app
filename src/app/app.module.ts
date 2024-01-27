@@ -10,6 +10,10 @@ import { NotFoundComponent } from './components/pages/not-found/not-found.compon
 import { PortfolioComponent } from './components/pages/portfolio/portfolio.component';
 import { CurriculumComponent } from './components/pages/curriculum/curriculum.component';
 import { ContactsComponent } from './components/pages/contacts/contacts.component';
+import { LayoutComponent } from './components/layout/layout.component';
+import { HeaderComponent } from './components/layout/header/header.component';
+import { FooterComponent } from './components/layout/footer/footer.component';
+import { SocialIconsComponent } from './components/layout/footer/social-icons/social-icons.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -27,7 +31,11 @@ const routes: Routes = [
     NotFoundComponent,
     PortfolioComponent,
     CurriculumComponent,
-    ContactsComponent
+    ContactsComponent,
+    LayoutComponent,
+    HeaderComponent,
+    FooterComponent,
+    SocialIconsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,38 @@
+* {
+    color: var(--color-grey-800);
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.section-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.section {
+    min-width: 25vw;
+    margin: 10px 20px;
+    padding: 5px 25px;
+}
+
+.next {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin: 10px 5px;
+}

@@ -1,0 +1,8 @@
+.page {
+    background: linear-gradient(180deg, var(--color-grey-800) 0%, var(--color-grey-500) 100%);
+    padding: 20px;
+    height: calc(100% - 230px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

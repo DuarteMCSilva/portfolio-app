@@ -1,0 +1,51 @@
+.header-wrapper {
+    width: 100%;
+    height: 75px;
+    background-color: var(--color-grey-800);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.logo {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 5px 20px;
+}
+
+.navitem {
+    font-size: 18px;
+
+    &:hover, &.active {
+        font-weight: 600;
+    }
+
+    .route-dot {
+        display: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        line-height: 5px;
+        font-size: 26px;
+    }
+
+    &.active .route-dot {
+        display: flex;
+    }
+}
