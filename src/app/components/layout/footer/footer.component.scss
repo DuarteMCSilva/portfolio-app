@@ -2,14 +2,7 @@
     color: var(--color-grey-800);
 }
 
-.footer-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.section-wrapper {
+:host {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;

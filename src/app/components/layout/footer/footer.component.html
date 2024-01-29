@@ -1,25 +1,21 @@
-<div class="footer-wrapper">
-    <div class="section-wrapper">
-        <div class="section contact">
-            <h3> Contact </h3>
-            <ul>
-                <li>
-                    <span> {{ contactInfo.name }}</span>
-                </li>
-                <li>
-                    <span> {{ contactInfo.email }}</span>
-                </li>
-                <li *ngIf="contactInfo?.phone">
-                    <span> {{ contactInfo.phone }}</span>
-                </li>
-                <li *ngIf="contactInfo?.address">
-                    <span> {{ contactInfo.address }}</span>
-                </li>
-            </ul>
-        </div>
-        <div class="section social">
-            <h3> Follow: </h3>
-            <app-social-icons></app-social-icons>
-        </div>
-    </div>
+<div class="section contact">
+    <h3> Contact </h3>
+    <ul>
+        <li>
+            <span> {{ contactInfo.name }}</span>
+        </li>
+        <li>
+            <span> {{ contactInfo.email }}</span>
+        </li>
+        <li *ngIf="contactInfo?.phone">
+            <span> {{ contactInfo.phone }}</span>
+        </li>
+        <li *ngIf="contactInfo?.address">
+            <span> {{ contactInfo.address }}</span>
+        </li>
+    </ul>
+</div>
+<div class="section social">
+    <h3> Follow: </h3>
+    <app-social-icons></app-social-icons>
 </div>
