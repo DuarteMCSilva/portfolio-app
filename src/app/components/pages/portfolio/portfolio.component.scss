@@ -1,0 +1,55 @@
+.grid {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img, .card {
+    border-radius: 2.5%;
+    width: 380px;
+}
+
+.card {
+    text-align: center;
+    padding: 30px;
+    margin: 20px auto;
+    background-color: var(--color-grey-300);
+    width: 450px;
+}
+
+.title, .description {
+    text-align: left;
+}
+
+.title {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.link, .link a {
+    cursor: pointer;
+    color: var(--color-primary-200);
+    width: max-content;
+    margin: 5px 0;
+
+    span {
+        display: flex;
+
+        svg {
+            fill: var(--color-primary-200);
+        }
+    }
+}
+
+.link:active {
+    color: var(--color-primary-500);
+    
+    span svg {
+        fill: var(--color-primary-500);
+    } 
+}
+
+span {
+    font-size: 18px;
+}
