@@ -14,6 +14,7 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { HeaderComponent } from './components/layout/header/header.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
 import { SocialIconsComponent } from './components/layout/footer/social-icons/social-icons.component';
+import { NavArrowsComponent } from './components/shared/nav-arrows/nav-arrows.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -35,7 +36,8 @@ const routes: Routes = [
     LayoutComponent,
     HeaderComponent,
     FooterComponent,
-    SocialIconsComponent
+    SocialIconsComponent,
+    NavArrowsComponent
   ],
   imports: [
     BrowserModule,

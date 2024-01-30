@@ -11,7 +11,6 @@
         </div>
     </div>
 </div>
-<div class="text-clickable arrow" [routerLink]="'/portfolio'"> 
-    <span>{{ 'Portfolio '}}</span>
-    <img class="icon" width="24" height="24" src="https://img.icons8.com/plumpy/24/double-right.png" alt="double-right"/>
-</div>
+<app-nav-arrows
+    [nextRoute]="{ name: 'Portfolio', link: '/portfolio'}"
+></app-nav-arrows>

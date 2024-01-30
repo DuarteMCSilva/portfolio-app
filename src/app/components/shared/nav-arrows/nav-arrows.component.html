@@ -1,0 +1,12 @@
+<div class="nav-arrows">
+    <div *ngIf="prevRoute" class="text-clickable arrow" [routerLink]="prevRoute.link">
+        <img class="icon" width="24" height="24" src="https://img.icons8.com/plumpy/24/double-left.png"
+            alt="double-left" />
+        <span>{{ prevRoute.name }}</span>
+    </div>
+    <div *ngIf="nextRoute" class="text-clickable arrow" [routerLink]="nextRoute.link">
+        <span>{{ nextRoute.name }}</span>
+        <img class="icon" width="24" height="24" src="https://img.icons8.com/plumpy/24/double-right.png"
+            alt="double-right" />
+    </div>
+</div>

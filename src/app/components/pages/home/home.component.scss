@@ -32,30 +32,3 @@
     text-align: center;
     padding: 0 10px;
 }
-
-.arrow {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 25px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-
-    .icon, span {
-        transition: transform 1s ease-out;
-    }
-
-    .icon {
-        margin: 0 10px;
-        align-self: center;
-    }
-
-    &:hover .icon { 
-        transform: translateX(5px);
-    }
-
-    &:hover span {
-        transform: translateX(-5px);
-
-    }
-}
