@@ -1,0 +1,115 @@
+:host {
+    width: 300px;
+    height: 200px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    --btn-size: 50px;
+}
+
+.button-base {
+    position: relative;
+    height: 20px;
+    background-color: black;
+    padding: 7px;
+    border-radius: 40px/5px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    transform: rotateX(-30deg);
+    
+    .button {
+        position: relative;
+        bottom: 7px;
+        width: var(--btn-size);
+        height: 20px;
+        background-color: red;
+        border-radius: 40px / 5px;
+
+        &.charging {
+            animation: 2s ease-in 1 click forwards;
+        }
+
+        &:not(.charging) {
+            animation: 1s ease-in 1 click reverse 7s forwards;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            border-radius: 40px / 5px;
+            height: 5px;
+            width: var(--btn-size);
+            background-color: rgb(150, 7, 7);
+
+        }
+    }
+}
+
+.battery {
+    position: relative;
+    transform: rotate(-90deg);
+    width: 100px;
+    height: 30px;
+    background-color: var(--color-grey-700);
+    border-radius: 5px;
+    border: solid 3px var(--color-grey-400);
+    border-width: 4px 3px 4px 6px;
+
+    .charge {
+        content: "";
+        position: absolute;
+        width: 20%;
+        height: 100%;
+        background-color: red;
+
+        &.charging {
+            animation: 5s ease-in 2s 1 charge forwards;
+        }
+
+        &:not(.charging) {
+            animation: 10s ease-in 2s 1 charge reverse;
+        };
+    }
+    .pin {
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 15px;
+        background-color: var(--color-grey-400);
+        right: -7px;
+        top: 3px;
+    }
+}
+
+
+@keyframes charge {
+    25% {
+        background-color: yellow;
+        width: 40%;
+    }
+    65% {
+        background-color: yellowgreen;
+        width: 65%;
+    }
+    100% {
+        background-color: green;
+        width: 100%;
+    }
+}
+
+@keyframes click {
+    0% {
+        height: 20px;
+    }
+
+    50%{
+        height: 5px;
+    }
+
+    100% {
+        height: 10px;
+    }
+}

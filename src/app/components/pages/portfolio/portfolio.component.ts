@@ -17,9 +17,10 @@ export class PortfolioComponent implements OnInit {
     },
 
     {
-      name: 'Happy Doggo',
-      image: 'assets/images/happy-doggo.png',
-      description: 'A simple application to search for dog images and discover some breeds.'
+      name: 'Popping Ball',
+      image: 'assets/images/pop-ball.png',
+      url: '/css-animations',
+      description: 'An animation where a ball drops from its container.'
     },
     {
       name: 'Happy Doggo',

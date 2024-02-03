@@ -16,13 +16,17 @@ import { FooterComponent } from './components/layout/footer/footer.component';
 import { SocialIconsComponent } from './components/layout/footer/social-icons/social-icons.component';
 import { NavArrowsComponent } from './components/shared/nav-arrows/nav-arrows.component';
 import { PopBallComponent } from './components/pages/pop-ball/pop-ball.component';
+import { AnimationsComponent } from './components/pages/animations/animations.component';
+import { ChargerComponent } from './components/pages/animations/charger/charger.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'contacts', component: ContactsComponent },
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'cv', component: CurriculumComponent },
-  { path: 'css/pop-ball', component: PopBallComponent },
+  { path: 'css-animations/charger', component: ChargerComponent },
+  { path: 'css-animations', component: AnimationsComponent },
+
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent }
 ];
@@ -40,7 +44,9 @@ const routes: Routes = [
     FooterComponent,
     SocialIconsComponent,
     NavArrowsComponent,
-    PopBallComponent
+    PopBallComponent,
+    AnimationsComponent,
+    ChargerComponent
   ],
   imports: [
     BrowserModule,

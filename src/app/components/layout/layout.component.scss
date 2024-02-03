@@ -5,12 +5,12 @@ app-header {
 }
 
 .page {
-    padding: 20px;
+    padding: 20px 120;
     height: calc(100% - 230px);
     margin-top: 60px;
     padding-top: 60px;
     width: 85vw;
     max-width: 1200px;
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: auto;
+    margin-right: auto;
 }

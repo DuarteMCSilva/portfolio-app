@@ -1,0 +1,7 @@
+<div class="button-base clickable" (click)="onCharge()">
+    <div class="button" [ngClass]="{'charging': isCharging}"></div>
+</div>
+<div class="battery">
+    <div class="charge" [ngClass]="{'charging': isCharging}"></div>
+    <div class="pin"></div>
+</div>
